@@ -88,7 +88,8 @@ body {
     box-shadow: 0px 0px 20px 10px black;
 }
 
-.hero-image-button:hover, .more-news-button:hover {
+.hero-image-button:hover, 
+.more-news-button:hover {
     cursor: pointer;
     background-color:#EAE2B7;
     color: black;
@@ -399,7 +400,8 @@ footer a:hover {
     margin-top: 9em;
 }
 
-.form-section h2, .form-section p {
+.form-section h2, 
+.form-section p {
     margin-bottom: 0.5em;
 }
 
@@ -407,7 +409,8 @@ form {
     margin-top: 1.5em;
 }
 
-form input, form textarea {
+form input, 
+form textarea {
     border: none;
     border-radius: 5px;
     width: 60%;
@@ -527,7 +530,8 @@ form button:hover {
     padding: 5%;
     max-width: 100%;
     height: auto;
-    margin-bottom: 4em;;
+    margin-bottom: 4em;
+    box-shadow: 0px 0px 20px 10px rgb(44, 44, 44);
 }
 
 .games-info-div h3 {
@@ -564,7 +568,8 @@ form button:hover {
         height:230px;
     }
 
-    .news-section h3, .news-section p {
+    .news-section h3, 
+    .news-section p {
         padding: 2%;
     }
 
@@ -608,7 +613,8 @@ form button:hover {
 
 
     /* OM OSS-sidan */
-    .about-section article, .about-section h1 {
+    .about-section article, 
+    .about-section h1 {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
@@ -623,29 +629,182 @@ form button:hover {
 /* desktop */
 @media (min-width: 1024px) {
 
-    body {
-        background-color:#FCBF49;
+    /* huvudmeny */ 
+    .main-menu {
+        width: 90%;
+        height: 100px;
+        font-size: 24px;
     }
-    /* .main-menu {
-    width: 100%;
-    height: 90px;
-    font-size: 24px;
-}
 
-.main-menu ul {
-    display: flex;
-    justify-content: right;
-    gap: 8em;
-    margin-right: 8em;
-}
+    .logo {
+        height: 95px;
+        margin-top: 3px;
+    }
 
-.main-menu li {
-    list-style-type: none;
-    margin-top: 30px;
-}
+    .main-menu ul {
+        display: flex;
+        justify-content: right;
+        flex-wrap: nowrap;
+        margin-right: 0em;
+    }
 
-.main-menu a {
-    text-decoration: none;
-    color: white;
-} */
+    .main-menu li {
+        margin-top: 35px;
+        margin-right: 15%;;
+    }
+
+    /* hero-image */
+    .hero-image {
+        height: 400px;
+     }
+    .hero-image img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .hero-image-button {
+        width: 20%;
+    }
+
+
+    /*  STARTSIDAN */
+    .info-section {
+        margin-bottom: 8em;
+    }
+    .info-section article {
+        max-width: 50%;
+    }
+
+    .news-section {
+        margin-top: 0;
+    }
+
+    .news-section article {
+        width: 30%;
+        height: 32em;
+    }
+
+    .puff-image {
+        height: 300px;
+    }
+
+    .read-more-button-homepage {
+        margin-left: 3%;
+    }
+
+    .news-section h3, 
+    .news-section p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    /* SPELUTBUD-sidan */
+    .our-games-section div {
+        width: 50%;
+        margin-bottom: 0em;
+    }
+
+    .games-section article {
+        width: 40%;
+        margin-top: 0em;
+    }
+
+    .games-info-div div {
+        width: 50%;
+    }
+
+
+    /* NYHETER-sidan */
+    .news div {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .news-page-section article {
+        margin-top: 5em;
+        width: 40%;
+        height: 39em;
+    }
+
+    .news-page-section h2 {
+        margin-top: 0;
+    }
+
+    .post-image {
+        height: 420px;
+    }
+
+    /* OM OSS-sidan */
+    .about-section article, 
+    .about-section h1 {
+        width: 50%;
+    }
+
+    .about-section h1  {
+        margin-bottom: 1em;
+    }
+
+    .staff-section {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .staff-section h2 {
+        margin-top: 0;
+        margin-bottom: 4em;
+    }
+
+    .staff-flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0em;
+    }
+
+    .staff-flexbox article {
+        flex: 0 0 30%;
+    }
+
+    .form-section {
+        width: 60%;
+        margin: 9em auto 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    form, 
+    .form-section h2,
+    .form-section p {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form input, 
+    form textarea {
+        width: 100%;
+        margin-bottom: 1%;
+        
+    }
+
+    form input {
+        height: 3em;
+    }
+
+    form textarea {
+        height: 8em;
+    }
+
+
+    /* FOOTER */
+    footer  {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
