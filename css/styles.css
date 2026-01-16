@@ -89,7 +89,7 @@ body {
 }
 
 .hero-image-button:hover, 
-.more-news-button:hover {
+#more-news-button:hover {
     cursor: pointer;
     background-color:#EAE2B7;
     color: black;
@@ -213,7 +213,7 @@ body {
     text-decoration: none;
 }
 
-.more-news-button {
+#more-news-button {
     background-color: #D62828;
     color: white;
     width: 10em;
@@ -230,11 +230,11 @@ body {
     text-decoration: none;
 }
 
-.more-news-button:visited {
+#more-news-button:visited {
  color: white;
 }
 
-.more-news-button:hover {
+#more-news-button:hover {
  color: black;
 }
 
